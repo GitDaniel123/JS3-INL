@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import About from './views/About'
 import Products from './views/Products'
 import './App.css';
+import ProductDetails from './views/ProductDetails'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route exact path="/" component={Home} />
       <Route exact path="/About" component={About} />
       <Route exact path="/Products" component={Products} />
+      <Route exact path="/Products/:id" component={ProductDetails} />
     </Switch>
 
       </div>

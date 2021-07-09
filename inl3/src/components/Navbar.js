@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
+import ShoppingCart from './shoppingCart/ShoppingCart';
 
 const Navbar = () => {
 
@@ -15,8 +16,9 @@ const Navbar = () => {
                 <div>
                 <div className="dropdown">
                     <i className=" fas fa-shopping-cart" onClick={() => setShowDropdown(prev => !prev)}></i>
+                    <span className="badge rounded-pill badge-notification">1</span>
                     {showDropdown && <div className="dropdown-content">
-                        shoppingcart
+                        <ShoppingCart />
                     </div>}
                 </div>
 
